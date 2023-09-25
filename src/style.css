@@ -1,0 +1,221 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("./assets/main.css");
+
+@layer base {
+  html {
+    font-family: Public Sans, system-ui, sans-serif;
+    font-weight: 400;
+    min-width: 980px;
+  }
+}
+
+html,
+body {
+  font-family: "Public Sans";
+  font-weight: 400;
+}
+
+body {
+  min-width: 980px;
+}
+
+header {
+  z-index: 999;
+  background: #ffffff;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.06),
+    0px 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+li {
+  border-left: 3px solid rgba(255, 255, 255, 0);
+  color: rgba(217, 217, 217, 1);
+}
+
+h1,
+.title {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 31px;
+  color: #212121;
+  margin-top: 3px;
+}
+
+.prim-btn {
+  justify-content: center;
+  align-items: center;
+  padding: 12px 16px;
+  gap: 4px;
+  background-color: #c9252f !important;
+  box-shadow: 0px 2px 6px -1px rgba(0, 0, 0, 0.06),
+    0px 0px 1px 1px rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.prim-btn:hover {
+  opacity: 0.8;
+}
+
+.prim-btn:active {
+  opacity: 0.7;
+}
+
+.disabled {
+  opacity: 0.45;
+  pointer-events: none;
+}
+
+.sec-btn {
+  justify-content: center;
+  align-items: center;
+  padding: 12px 16px;
+  gap: 4px;
+  background: #fff;
+  box-shadow: 0px 2px 6px -1px rgba(0, 0, 0, 0.06),
+    0px 0px 1px 1px rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  border: 1px solid #c9252f;
+  color: #c9252f;
+  margin: 0 10px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.sec-btn:hover {
+  background: #c9252f;
+  color: white;
+}
+
+.sec-btn:active {
+  background: #c9252f;
+  color: white;
+  opacity: 0.7;
+}
+
+.top-menu-wrapper {
+  top: 35px;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.25),
+    0px 0px 0px 1px rgba(0, 0, 0, 0.06), 0px -2px 0px -2px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 0px 8px 8px;
+}
+
+.label {
+  top: -8px;
+  left: 22px;
+  background-color: white;
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  color: #212121;
+}
+
+.hid {
+  display: none;
+}
+
+input[type="radio"] {
+  border-radius: 20px;
+}
+
+#properties_tab,
+#display_tab,
+#style_tab,
+#preview_tab {
+  display: none;
+}
+
+.success {
+  background-color: #dcfce7;
+}
+
+.info {
+  background-color: #dbeafe;
+}
+
+.warning {
+  background-color: #fef9c3;
+}
+
+.error {
+  background-color: #fee2e2;
+}
+
+.control-offset:active {
+  outline-offset: 3px;
+  outline: 2px solid #c9252f;
+}
+
+.shadow-default {
+  box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0px 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.shadow-primary {
+  box-shadow: 0px 2px 6px -1px rgba(0, 0, 0, 0.06),
+    0px 0px 1px 1px rgba(0, 0, 0, 0.15);
+}
+
+.shadow-secondary {
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.06),
+    0px 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.shadow-login {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.label-primary {
+  @apply absolute -top-2 left-6 px-1 text-xs font-medium bg-white text-neutral-125;
+}
+
+.input-primary {
+  @apply w-full p-3 border border-gray-300 rounded-lg shadow-primary focus:border-red-500 focus:ring-0 focus:shadow-none;
+}
+
+.btn-primary {
+  @apply px-4 py-3 rounded-lg text-base font-semibold uppercase bg-primary-main text-white shadow-primary hover:opacity-80 active:opacity-70;
+}
+
+.btn-secondary {
+  @apply px-4 py-3 rounded-lg text-base font-semibold uppercase bg-white text-primary-main shadow-primary hover:bg-primary-main hover:text-white active:opacity-70;
+}
+
+.tab-wrapper-primary {
+  @apply rounded-lg bg-white shadow-default;
+}
+
+.tab-heading-primary {
+  @apply px-6 py-4 rounded-t-lg text-lg font-semibold bg-neutral-100 text-white;
+}
+
+.active-tab {
+  @apply bg-white text-primary-main [&>div>p]:text-primary-main;
+}
+
+.first-tab {
+  @apply rounded-tl-lg rounded-bl-lg;
+}
+
+.last-tab {
+  @apply rounded-tr-lg rounded-br-lg;
+}
+
+.reset-box-shadow {
+  box-shadow: none;
+}
+
+.border-critical {
+  border: 1px solid #891e24;
+}
