@@ -12,11 +12,19 @@ The original code for this animation is found here: [Animation CodePen](https://
 
 You can see the live demo of the ResNova login page here: [ResNova Login Page Demo](https://resnova-login.vercel.app/)
 
-## Links
+## About Me
 
-- YouTube: [Codemotion Labs](https://www.youtube.com/@codemotionlabs/)
 - LinkedIn: [Joami Mynhardt](https://www.linkedin.com/in/joami-mynhardt/)
-- Portfolio website: [Motion Code Labs](https://motioncodelabs.co.za/)
+- YouTube: [MotionCodeLabs Videos](https://www.youtube.com/@motioncodelabs/videos)
+- Portfolio Website: [MotionCodeLabs](https://motioncodelabs.co.za)
+
+Feel free to connect with me on LinkedIn, explore my YouTube channel for more web development content, and visit my portfolio website to learn more about my projects and skills.
+
+## Technologies Used
+
+- Vue.js
+- HTML/CSS
+- JavaScript
 
 ## License Disclaimer
 
